@@ -25,6 +25,13 @@ function App() {
         <li>리스트3</li>
         <li>리스트4</li>
       </ol>
+      <div className="box">
+        <h2>CSS속성적용</h2>
+        <p>css는 html요소를 스타일링 학 위한 목적으로 사용</p>
+        <a href='https://www.w3schools.com' target="_blank">
+         Html / CSS 학습사이트
+        </a>
+      </div>
     </div>
   )
 }
