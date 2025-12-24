@@ -39,7 +39,7 @@ th,td {
 
 th {
     background-color: #007bff;
-    color: white:
+    color: white;
 }
 
 form {
@@ -78,3 +78,4 @@ input[type="email"] {
     /* 마우스를 가져다 대면 손가락 모양이 나오도록 구성해줌*/
     cursor: pointer;
 }
+

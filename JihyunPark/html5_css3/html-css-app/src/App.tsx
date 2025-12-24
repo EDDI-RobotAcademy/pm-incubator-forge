@@ -65,7 +65,7 @@ function App() {
 
           <form>
             {/* 레이블 이름 필드 */}
-            <label htmlFor='name'>이름:</label>
+            <label htmlFor='name'>이&nbsp;&nbsp;&nbsp;름 :</label>
             {/* 이름 필드를 식별할 수 있는 id값(name) 입력 타입이 문자 */}
             <input type="text" id="name" name="name" />
             {/* 엔터 */}

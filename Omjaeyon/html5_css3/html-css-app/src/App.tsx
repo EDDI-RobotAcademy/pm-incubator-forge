@@ -75,6 +75,7 @@ function App() {
           <p> Form 형식은 데이터 입력 가능 형태</p>
 
           <form>
+            {/* */}
             <label htmlFor="name">이름:</label>
             <input type="text" id="name" name="name" /><br /><br />
             <label htmlFor="email">이메일:</label>
