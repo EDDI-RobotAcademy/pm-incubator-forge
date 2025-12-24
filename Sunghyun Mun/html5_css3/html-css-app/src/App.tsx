@@ -1,3 +1,4 @@
+import './style/main.css'
 import './App.css'
 
 // 실행 방법: npm run dev
@@ -15,12 +16,12 @@ function App() {
       <div>
         {/* h1 태그는 제목을 표시할때 사용. */}
         {/* 숫자 크기에 따라 사이즈가 조정됨. */}
-        <h1>Frist HTML5/CSS3</h1>
-        <h2>Frist HTML5/CSS3</h2>
-        <h3>Frist HTML5/CSS3</h3>
-        <h4>Frist HTML5/CSS3</h4>
-        <h5>Frist HTML5/CSS3</h5>
-        <h6>Frist HTML5/CSS3</h6>
+        <h1>First HTML5/CSS3</h1>
+        <h2>First HTML5/CSS3</h2>
+        <h3>First HTML5/CSS3</h3>
+        <h4>First HTML5/CSS3</h4>
+        <h5>First HTML5/CSS3</h5>
+        <h6>First HTML5/CSS3</h6>
 
         {/* 주석 */}
         {/* 실제 여러 사람들과 개발할 때 내 머리속의 생각이 공유되지 않기 때문 */}
@@ -57,6 +58,56 @@ function App() {
             HTML / CSS학습 사이트
           </a>
         </div>
+
+        <div className="box">
+          <h2>표 만들기</h2>
+          <p>표는 데이터를 행과 열로 표현</p>
+          {/* 표를 만들 때 초기 테이블 틀 */}
+          <table>
+            {/* 표 내에서 제목에 해당하는 파트 구성 */}
+              <thead>
+                {/* 행 */}
+                <tr>
+                  {/* 제목 열 */}
+                  <th>첫 번째 제목 열</th>
+                  <th>두 번째 제목 열</th>
+                </tr>
+              </thead>
+
+              {/* 테이블 내용 */}
+              <tbody>
+                <tr>
+                  {/* 열 */}
+                  <td>데이터 1</td>
+                  <td>데이터 2</td>
+                </tr>
+              </tbody>
+            </table>          
+        </div>
+      </div>
+
+      <div className="box">
+        <h2>Form(형식)</h2>
+        <p>Form 형식은 데이터를 입력할 수 있는 형태</p>
+
+        <form>
+          {/* 레이블 - 이름 필드 */}
+          <label htmlFor='name'>이름</label>
+          {/* 이름 필드를 식별할 수 있는 id 값(name) 입력 타입이 문자 */}
+          <input type='text' id= 'name' name='name' />
+          {/* 개행(엔터) */}
+          <br/>
+
+          <label htmlFor='email'>이메일</label>
+          {/*  입력 타입이 이메일 타입 */}
+          <input type='email' id='email' name='email'/>
+          <br/>
+
+          {/* 버튼 생성 - 타입이 submit이기 때문에 클릭하면 뭔가 액션이 발생할 수 있음 */}
+          <button type="submit" className='custom-button'>
+            제출
+          </button>
+        </form>
       </div>
     </>
   ) 

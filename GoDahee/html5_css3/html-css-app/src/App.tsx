@@ -1,3 +1,4 @@
+import './style/main.css'
 import './App.css'
 
 function App() {
@@ -31,10 +32,47 @@ function App() {
         <div className="box">
           <h2>CSS 속성 적용</h2>
           <p>CSS는 HTML요소를 스타일링 하기 위한 목적으로 사용</p>
-          <a href='https://www.w3schools.com/'>
+          <a href='https://www.w3schools.com/' target="_blank">
            HTML / CSS 학습 사이트
           </a>
         </div>
+
+        <div className="box">
+          <h2>표 만들기</h2>
+          <p>표는 데이터를 행과 열로 표현</p>
+          <table>
+            <thead>
+              <tr>
+                <th>첫 번째 제목 열</th>
+                <th>두 번째 제목 열</th>
+              </tr>  
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>데이터 1</td>
+                <td>데이터 2</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div className="box">
+          <h2>From(형식)</h2>
+          <p>From 형식은 데이터를 입력할 수 있는 형태</p>
+          
+          <form>
+            <label htmlFor="name">이 름</label>
+            <input type="text" id="name" name="name"/>
+            <br/>
+            <label htmlFor="email">이메일</label>
+            <input type="email" id="email" name="email"/>
+            <br/>
+            <button type="submit" className='custom-button'>
+              제출
+            </button>
+          </form>  
+        </div> 
       </div>
     </>
   )

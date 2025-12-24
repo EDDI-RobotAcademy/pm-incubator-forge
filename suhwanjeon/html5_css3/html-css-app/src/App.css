@@ -40,3 +40,29 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Form validation styles */
+.error-message {
+  color: #d9534f;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.invalid {
+  border: 2px solid #d9534f;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(217, 83, 79, 0.08);
+}
+
+.custom-button {
+  background-color: #4a90e2;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.custom-button:hover {
+  opacity: 0.95;
+}

@@ -1,7 +1,7 @@
+import './style/main.css'
 import './App.css'
 
 function App() {
-
   return (
     <>
       <div>
@@ -23,27 +23,72 @@ function App() {
           <li>리스트 1</li>
           <li>리스트 2</li>
           <li>리스트 3</li>
-          </ul>
+        </ul>
       </div>
-         <ol>
-          <li>리스트1</li>
-          <li>리스트2</li>
-          <li>리스트3</li>
-        </ol>
 
-        {/* tailwindcss같은 편리한 녀석들이 존재함*/}
-        {/*html / css를 알고 쓰는 것과 차이가 있긴함*/}
-        <div className="box">
-          <h2>CSS 속성 적용</h2>
-          <p>CSS는 HTML요소를 스타일링 하기 위한 목적으로 사용</p>
-          <a href='http://www.w3schools.com/' target= "blank">
-           HTML / CSS 학습사이트
-           </a>
-        </div>
-  </>
+      <ol>
+        <li>리스트1</li>
+        <li>리스트2</li>
+        <li>리스트3</li>
+      </ol>
+
+      {/* tailwindcss같은 편리한 녀석들이 존재함 */}
+      {/* html / css를 알고 쓰는 것과 차이가 있긴함 */}
+      <div className="box">
+        <h2>CSS 속성 적용</h2>
+        <p>CSS는 HTML요소를 스타일링 하기 위한 목적으로 사용</p>
+        <a
+          href="https://www.w3schools.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          HTML / CSS 학습사이트
+        </a>
+      </div>
+
+      <div className="box">
+        <h2>표 만들기</h2>
+        <table>
+          <thead>
+            {/* 행 */}
+            <tr>
+              {/* 제목 열 */}
+              <th>첫 번째 제목 열</th>
+              <th>두 번째 제목 열</th>
+            </tr>
+          </thead>
+
+          {/* 테이블 내용 */}
+          <tbody>
+            <tr>
+              {/* 열 */}
+              <td>데이터 1</td>
+              <td>데이터 2</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div className="box">
+        <h2>Form(형식)</h2>
+        <p>form 형식은 데이터를 입력할 수 있는 형태</p>
+
+        <form>
+          <label htmlFor="name">이름</label>
+          <input type="text" id="name" name="name" />
+          <br />
+
+          <label htmlFor="email">이메일</label>
+          <input type="email" id="email" name="email" />
+          <br />
+
+          <button type="submit" className="custom-button">
+            제출
+          </button>
+        </form>
+      </div>
+    </>
   )
 }
-
-
 
 export default App

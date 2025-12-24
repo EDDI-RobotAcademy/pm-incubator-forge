@@ -1,4 +1,6 @@
+import React, { useState } from 'react'
 import './App.css'
+import './style/main.css' 
 
 // 실행 방법: npm run dev 
 // 실행 이후 나타나는 Local:http://localhost:숫자/ 가 있음
@@ -9,6 +11,40 @@ import './App.css'
 
 // Cmd + / 를 누르면 자동으로 특정 위치에서 사용할 수 있는 주석이 만들어짐 
 function App() {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [phone, setPhone] = useState('')
+  const [address, setAddress] = useState('')
+  const [errors, setErrors] = useState({ name: false, email: false, phone: false, address: false })
+  const [error, setError] = useState(false)
+
+  const validateEmail = (s: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s)
+  const validatePhone = (s: string) => {
+    const digits = s.replace(/\D/g, '')
+    return digits.length >= 7 && digits.length <= 15
+  }
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    const newErrors = {
+      name: name.trim() === '',
+      email: !validateEmail(email),
+      phone: !validatePhone(phone),
+      address: address.trim() === ''
+    }
+    setErrors(newErrors)
+    const hasError = Object.values(newErrors).some(Boolean)
+    setError(hasError)
+
+    if (!hasError) {
+      setError(false)
+      alert('폼이 정상적으로 제출되었습니다!')
+      setName('')
+      setEmail('')
+      setPhone('')
+      setAddress('')
+    }
+  }
 
   return (
     <>
@@ -54,9 +90,92 @@ function App() {
       HTML / CSS 학습 사이트 
       </a>
    </div>
- </div>
-</>
-)
-}
+ 
+ <div className="box">
+    <h2>표 만들기 </h2> {/* 표 만들기에 쓰는 기호들 꼭 익히기 */}
+    <p>표는 데이터를 행과 열로 표현</p>
+    <table>
+      <thead>
+        <tr>
+          <th>첫 번째 제목 열 </th>
+          <th>두 번째 제목 열 </th>
+     </tr>
+      </thead>            
+      <tbody>
+        <tr>
+          <td>데이터 1</td>
+          <td>데이터 2</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+        <div className="box">
+          <h2>Form(형식)</h2>
+          <p>Form 형식은 데이터를 입력할 수 있는 형태</p>
+  
+          <form onSubmit={handleSubmit} noValidate>
+            {error && (
+              <p className="error-message" role="alert" aria-live="assertive">
+                올바르게 작성해주세요
+              </p>
+            )}
+
+            {/* 레이블 - 이름 필드 */}
+            <label htmlFor="name">이&nbsp;&nbsp;&nbsp;름:</label>
+            {/* 이름 필드를 식별할 수 있는 id값(name) 입력 타입이 문자 */}
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              className={errors.name ? 'invalid' : ''}
+            />
+            {/*개행(엔터) */}
+            <br />
+            <label htmlFor="email">이메일:</label>
+            {/* 입력 타입이 이메일 타입 */}
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className={errors.email ? 'invalid' : ''}
+            />
+            <br />
+            <label htmlFor="phone">전화번호:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              className={errors.phone ? 'invalid' : ''}
+            />
+            <br />
+            <label htmlFor="address">주소:</label>
+            <input
+              type="text"
+              id="address"
+              name="address"
+              value={address}
+              onChange={(e) => setAddress(e.target.value)}
+              className={errors.address ? 'invalid' : ''}
+            />
+            <br />
+
+            {/* 버튼 생성 - 타입이 submit이기 때문에 클릭하면 뭔가 액션이 발생할 수 잇음 */}
+            <button type="submit" className='custom-button'>
+              제출
+            </button>
+          </form>
+          </div>
+        </div>  {/* <-- 누락된 최상위 div 닫기 추가 */}
+      </>
+  );     {/* <-- return 닫는 괄호 추가 */}
+}       {/* <-- 함수 닫는 중괄호 추가 */}
 
 export default App

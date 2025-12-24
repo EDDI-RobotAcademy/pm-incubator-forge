@@ -1,0 +1,70 @@
+.box {
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 5px;
+  border: 2px solid royalblue;
+  font-weight: bold;
+  /* 텍스트를 왼쪽으로 정렬 */
+  text-align: left;
+}
+
+table {
+  width: 100%;
+  /* 표를 만들다 보니 겹치는 영역의 선이 지저분해지는데 그 부분을 제거 */
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+  /* 텍스트를 중앙 정렬 */
+  text-align: center;
+} 
+
+th {
+  background-color: royalblue;
+  color: white;
+}
+
+form {
+  /* 간격 조정 활성화 */
+  display: flex;
+  /* 요소가 위에서 아래로 쌓이도록 구성(옆에 붙지 않음) */
+  flex-direction: column;
+}
+
+label {
+  /* 위 10px, 아래 5px 여백 */
+  margin: 10px 0 5px;
+  color: #444444;
+  font-weight: 500;
+}
+
+/* 입력 type이 text와 email에 적용 */
+input[type="text"],
+input[type="email"] {
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  /* 브라우저의 기본 폰트 크기 */
+  font-size: 1rem;
+}
+
+/* input [type="text"]:focus,
+input [type="email"]:focus {
+  border-color: rgb(65, 161, 225);
+  outline: none;
+} */
+
+.custom-button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: royalblue;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

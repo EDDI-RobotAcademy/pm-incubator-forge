@@ -1,0 +1,87 @@
+.box {
+    background-color: #f0f0f0;
+    /* 박스 배경색을 연한 회색(#f0f0f0)으로 설정 */
+
+    padding: 20px;
+    /* 박스 안쪽 여백(콘텐츠와 테두리 사이)을 20px로 설정 */
+
+    margin: 15px 0;
+    /* 박스 바깥 여백: 위/아래 15px, 좌/우 0px */
+
+    border-radius: 5px;
+    /* 테두리 모서리를 5px 만큼 둥글게 처리 */
+
+    border: 2px solid #007bff;
+    /* 2px 두께의 실선(solid) 테두리를 파란색(#007bff)으로 설정 */
+
+    font-weight: bold;
+    /* 글자를 굵게(bold) 표시 */
+
+    text-align: left;
+    /* 텍스트를 왼쪽으로 정렬 */
+}
+
+table {
+    /* 실제로 box 내부에서 사용하므로 box 크기만큼 */
+    width: 100%;
+    /* 표의 너비를 부모 요소에 맞게 100%로 설정 */
+    /* 표를 만들다 보니 겹치는 영역의 선이 지저분해지는데 그 부분을 제거 */
+
+    border-collapse: collapse;
+    /* 테두리 겹침을 없애서 셀 간의 경계선을 하나로 만듦 */
+    /* 데이터 상단에 여백을 만들어줌 */
+
+    margin-top: 10px;
+    /* 표 위쪽에 10px의 여백 추가 */
+}
+
+th, td {
+    /* 실제 셀의 테두리 크기를 1px, 실선, 검정색 */
+    border: 1px solid black;
+    /* 셀의 테두리를 검은색 실선으로 설정 */
+
+    padding: 10px;
+    /* 셀 안쪽 여백을 10px로 설정 */
+
+    text-align: center;
+    /* 셀 내 텍스트를 가운데 정렬 */
+}
+
+th {
+    background-color: #007bff;
+    /* 제목 셀의 배경색을 파란색(#007bff)으로 설정 */
+
+    color: white;
+    /* 제목 셀의 글자색을 흰색으로 설정 */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    color: #444444;
+    font-weight: 500;
+    /* 글자 두께를 500으로 설정 */
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.custom-button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #4a90ea;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

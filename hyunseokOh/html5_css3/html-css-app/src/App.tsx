@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import './style/main.css'
 
 function App() {
   
@@ -45,6 +46,55 @@ function App() {
             W3Schools 방문하기
           </a>
         </div>
+
+        {/* 표 만들기 */}
+        {/* 표는 table 태그로 정의됩니다. */}
+        {/* 표의 헤더는 thead 태그로 정의됩니다. */}
+        {/* 표의 바디는 tbody 태그로 정의됩니다. */}
+        <div className='box'>
+          <h2>표 만들기</h2>
+          <p>아래는 간단한 표입니다.</p>
+          <table>
+            <thead>
+              <tr>
+                <th>이름</th>
+                <th>나이</th>
+                <th>도시</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>홍길동</td>
+                <td>30</td>
+                <td>서울</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div className='box'>
+          <h2>form(형식)</h2>
+          <p>아래는 간단한 form(형식)입니다.</p>
+          <form>
+            {/*  레이블 - 이름 필드 */}
+            <label htmlFor='name'> 이름: </label>
+            {/* 이름 필드를 식별할 수 있는 id 값(name) 입력 타입이 문자 */}
+            <input type='text' id='name' name='name' />
+            {/* 개행 */}
+            <br />
+            <br />
+            {/*  레이블 - 이메일 필드 */}
+            <label htmlFor='email'>이메일: </label>
+            <input type='email' id='email' name='email' />
+            <br />
+            
+            {/* 버튼 생성 - submit 타입이기 때문에 클릭 시 액션 발생 */}
+            <button type='submit' className='custom-button'>
+              제출 
+            </button>
+          </form>
+        </div>
+
       </div>
     </>
     )
