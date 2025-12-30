@@ -2,7 +2,6 @@
 export const FirstProblem= () => {
    let x = 10;
    let z = 20;
-
    let result;
 
 
@@ -13,14 +12,15 @@ export const FirstProblem= () => {
         result = "Hi"
    }
    
-   let ternaryResult = x > z ? "Hello" : "Hi"
+   let ternaryResult = z > x ? "Hello" : "Hi"
     return (
     <div>
-        <h3>FirstProblem 문제 (if)</h3>
+        <h3>javascript 첫 번째 퀴즈 (if)</h3>
 
             <pre>{
             `               
-x = ${x}                      
+x = ${x}
+z = ${z}                      
 result = ${result}
 ternearyResult = ${ternaryResult}                  
 

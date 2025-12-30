@@ -28,7 +28,7 @@ export const ControlFlowIf = () => {
 
    let ternaryResult = x > 5 ? "x는 5보다 크다" : "X는 5 보다 작거나 같다."
 
-return (
+    return (
     <div>
         <h3>javascript 제어문 (if)</h3>
 
