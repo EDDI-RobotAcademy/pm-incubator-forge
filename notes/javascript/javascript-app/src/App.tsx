@@ -1,4 +1,5 @@
 import './App.css'
+import { ControlFlowFor } from './control_flow/ControlFlowFor'
 import { ControlFlowIf } from './control_flow/ControlFlowIf'
 import { ControlFlowSwitch } from './control_flow/ControlFlowSwitch'
 import { VariableAndDataTypes } from './data_type/VariableAndDataTypes'
@@ -22,6 +23,7 @@ function App() {
         <ControlFlowIf/>
         <FirstProblem/>
         <ControlFlowSwitch/>
+        <ControlFlowFor/>
       </div>
     </>
   )
