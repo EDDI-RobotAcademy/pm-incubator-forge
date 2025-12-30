@@ -22,9 +22,9 @@ export const FirstProblem = () => {
             <pre>{
                 // esc키 아래 물결 (~) 부분을 쉬프트 키 누르지 않고 찍으면 백틱
                 `
-z = ${z}                            // 5
-x = ${x}                            // 20
-result = ${result}                  // Hi
+z = ${z}
+x = ${x}
+result = ${result}
 ternaryResult = ${ternaryResult}
                 `
             }</pre>
