@@ -7,18 +7,22 @@ export const FirstProblem = () => {
     if (z > x) {
 
         result = "Hello"
-    } else if(z <= x) {
-
+    } else {
         result = "Hi."
     }
 
+    let ternaryResult = z > x ? "Hello" : "Hi"
+
     return (
         <div>
-            <h3>javascript 제어문 문제1 (if)</h3>
+            <h3>javascript 첫번째 퀴즈</h3>
 
             <pre>{
-                `                       
-result = ${result}                 
+                `          
+x =  ${x}                           
+z =  ${z}                           
+result = ${result}    
+ternaryResult = ${ternaryResult}             
                 `
             }</pre>
         </div>
