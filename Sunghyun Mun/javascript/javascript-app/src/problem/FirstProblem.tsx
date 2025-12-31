@@ -1,11 +1,16 @@
-export const ControlFlowIf = () => {
+// z가 x보다 크면 Hello
+// x가 z보다 작거나 같은면 Hi
+
+export const FirstProblem = () => {
     let x = 25;
     let z = 16
     let result;
 
     if (x > z) {
+        // x가 z보다 크다.
         result = "Hello"
     } else {
+        // z가 x보다 작거나 같다.
         result = "Hi"
     }
 

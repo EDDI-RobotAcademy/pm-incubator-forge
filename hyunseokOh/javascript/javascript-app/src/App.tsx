@@ -10,6 +10,7 @@ import { FirstProblem } from './problem/FirstProblem'
 import { ControlFlowSwitch } from './control_flow/ControlFlowSwitch'
 import { ControlFlowFor } from './control_flow/ControlFlowFor'
 import { ControlFlowForSummation } from './control_flow/ControlFlowForSummation'
+import { ControlFlowForSumExample } from './control_flow/ControlFlowForSumExample'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -32,6 +33,7 @@ function App() {
         <br />
         <ControlFlowFor/>
         <ControlFlowForSummation/>
+        <ControlFlowForSumExample/>
       </div>
     </>
   )

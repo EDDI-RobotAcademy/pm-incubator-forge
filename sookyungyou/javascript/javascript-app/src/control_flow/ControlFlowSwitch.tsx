@@ -11,13 +11,18 @@ export const ControlFlowSwitch = () => {
     let gradeName
 
     switch (grade) {
+    // switch는 grade 값이 뭐냐에 따라 다르게 처리함
         case 1: gradeName = "SSS"; break;
         case 2: gradeName = "SS"; break;
         case 3: gradeName = "S"; break;
         case 4: gradeName = "A"; break;
         case 5: gradeName = "B"; break;
+        // grade 가 1일 경우 (case 1) gradeName에 SSS 넣고 멈춰 (break)
 
         default: gradeName = "규격 외 (심해)"; break;
+        // grade가 1~5 전부 해당 x (6일 경우)
+        // 6이 나올 확률이 낮은 이유: 5 ~ 5.2999999 나와야 함
+        // 다른 애들은 1 ~ 1.9999999 -> 훨씬 확률 높음 
     }
     
 

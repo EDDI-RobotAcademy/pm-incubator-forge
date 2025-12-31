@@ -12,7 +12,10 @@ export const ControlFlowFor = () => {
     for (let i = 1; i <= 3; i++) {
         loopResultArray.push(i)
     }
-
+// for 문 작성법
+// for (초기식; 조건식; 증감식) {
+//    반복 실행할 코드
+// }
     return (
         <div>
             <h3> javascript 제어문 (for) </h3>

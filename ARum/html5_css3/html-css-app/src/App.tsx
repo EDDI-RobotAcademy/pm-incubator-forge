@@ -7,6 +7,7 @@ import { CalculationExample } from './math_operation/CalculationExample'
 import { ControlFlowSwitch } from './control_flow/ControlFlowSwitch.tsx'
 import { ControlFlowFor } from './control_flow/ControlFlowFor.tsx'
 import { ControlFlowForSummation } from './control_flow/ControlFlowForSummation.tsx'
+import { ControlFlowForSummationExample } from './control_flow/ControlFlowForSummationExample.tsx'
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
         <ControlFlowSwitch/>
         <ControlFlowFor/>
         <ControlFlowForSummation/>
+        <ControlFlowForSummationExample/>
       </div>
     </>
   )

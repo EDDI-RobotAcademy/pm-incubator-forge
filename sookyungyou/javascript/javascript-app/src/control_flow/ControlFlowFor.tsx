@@ -32,13 +32,13 @@ export const ControlFlowFor = () => {
          //맨 처음 i = 1
          //이때 LoopResultArray = [1]
 
-         //다음 반복 i = 2
+         //다음 반복 i = 1 + 1 (i++) = 2
          // LoopResultArray = [1, 2]
 
-         //다음 반복 i = 3
+         //다음 반복 i = 2 + 1 (i++) = 3
          // LoopResultArray = [1, 2, 3]
    }
-    // for (초기화; 조건부; 증감부) {
+    // for (초기화=초기값; 조건부; 증감부=변화) {
     //      조건이 만족된다는 전제하에 반복시킬 코드 (루프내 코드)
     // }
 

@@ -7,6 +7,7 @@ import { FirstProblem } from "./problem/FirstProblem";
 import { ControlFlowSwitch } from "./control_flow/ControlFlowSwitch";
 import { ControlFlowFor } from "./control_flow/ControlFlowFor";
 import { ControlFlowForSummation } from "./control_flow/ControlFlowForSummation";
+import { ControlFlowForSumExample } from "./control_flow/ControlFlowForSumExample";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <ControlFlowSwitch />
         <ControlFlowFor />
         <ControlFlowForSummation />
+        <ControlFlowForSumExample />
       </div>
     </>
   );

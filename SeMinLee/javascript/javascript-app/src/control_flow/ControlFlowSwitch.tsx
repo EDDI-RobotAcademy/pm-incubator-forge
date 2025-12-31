@@ -1,4 +1,7 @@
 export const ControlFlowSwitch = () => {
+// Math.random() : 0 이상 1 미만의 실수 난수 생성
+// https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+
     let grade = Math.floor(Math.random() * 5) + 1; // 1 ~ 5 사이의 랜덤 정수
     let gradeName
     switch(grade) {

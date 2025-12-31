@@ -1,5 +1,6 @@
 import './App.css'
 import { ControlFlowFor } from './control_flow/ControlFlowFor'
+import { ControlFlowForSumExample } from './control_flow/ControlFlowForSumExample'
 import { ControlFlowForSummation } from './control_flow/ControlFlowForSummation'
 import { ControlFlowIf } from './control_flow/ControlFlowIf'
 import { ControlFlowSwitc } from './control_flow/ControlFlowSwitch'
@@ -26,6 +27,7 @@ function App() {
         <ControlFlowSwitc/>
         <ControlFlowFor/>
         <ControlFlowForSummation/>
+        <ControlFlowForSumExample/>
       </div>
     </>
   )
