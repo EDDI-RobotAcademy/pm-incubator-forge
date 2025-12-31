@@ -32,7 +32,7 @@ export const ControlFlowIf = () => {
 
             <pre>{
                 `
-x = ${x}x                           // 10
+x = ${x}                            // 10
 result = ${result}                  // x는 5보다 크다.
 ternaryResult = ${ternaryResult}
                 `    

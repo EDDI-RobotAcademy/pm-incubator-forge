@@ -1,7 +1,7 @@
 export const ControlFlowFor = () => {
     let loopResultArray = []
 
-    for (let i = 1; 1 < 3; i++) {
+    for (let i = 1; i < 3; i++) {
         loopResultArray.push(i)
     }
 

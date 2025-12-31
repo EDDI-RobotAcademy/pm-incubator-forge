@@ -1,5 +1,4 @@
 export const ControlFlowForSummation = () => {
-
     let loopResultArray = [];
     let summation = 0;
 

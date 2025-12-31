@@ -8,7 +8,7 @@ export const ControlFlowForSummation = () =>{
     }
 
     for(let i = 1; i <= 3; i++){
-        summation += loopResultArray[i-1]
+        summation += loopResultArray[i-1]   // += : 왼쪽과 오른쪽을 합해서 왼쪽에 대입
     }
 
 

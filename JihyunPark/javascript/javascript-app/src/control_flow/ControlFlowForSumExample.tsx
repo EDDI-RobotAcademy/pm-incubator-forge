@@ -17,7 +17,8 @@ export const ControlFlowForSumExample = () => {
     // }
 
     // i 기준 (동의어 2)
-    // for (let i = 1, j = 1; i <= 5; i += 2, j++) {
+    // for (let i = 1, j = 1; i <
+    // = 5; i += 2, j++) {
     //     loopResultArray.push(i)
     //     summation += loopResultArray[j-1]
     // }

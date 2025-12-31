@@ -8,6 +8,7 @@ import { VariableAndDataType } from './data_type/VariableAndDataType'
 import { LogicalOperationExample } from './logical_operation/LogicalOperationExample'
 import { CalCulationExample } from './math_operation/CalculationExample' 
 import { FirstProblem } from './Problem/FirstProblem'
+import { SecondProblem } from './Problem/SecondProblem'
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
         <ControlFlowFor/> 
         <ControlFlowForSummation/>
         <ControlFlowForSumExample/>
+        <SecondProblem/>
         </div>
     </>
   )

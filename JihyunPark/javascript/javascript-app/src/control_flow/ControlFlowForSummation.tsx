@@ -18,7 +18,7 @@ export const ControlFlowForSummation = () => {
         summation += loopResultArray[i - 1]
 
         // i가 1일 때
-        // summation = 0 + 1
+        // summation = 0 + 1(loopResultArray[0])
         // ?? 왜 1을 더하지?
         // 배열 시작 인덱스가 0부터 시작하기 때문
         // 연산 이후 summation은 1이 됨

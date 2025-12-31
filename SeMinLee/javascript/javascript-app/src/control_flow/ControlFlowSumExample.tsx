@@ -9,7 +9,7 @@ export const ControlFlowSumExample = () => {
 
     return (
         <div>
-            <h3> javascript 제어문 (for) </h3>
+            <h3> javascript 제어문 (for Summation 예제) </h3>
 
          <pre>{
 

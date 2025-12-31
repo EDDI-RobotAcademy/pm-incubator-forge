@@ -8,6 +8,7 @@ import { ControlFlowSwitch } from './control_flow/ControlFlowSwitch.tsx'
 import { ControlFlowFor } from './control_flow/ControlFlowFor.tsx'
 import { ControlFlowForSummation } from './control_flow/ControlFlowForSummation.tsx'
 import { ControlFlowForSummationExample } from './control_flow/ControlFlowForSummationExample.tsx'
+import { SecondProblem } from './problem/SecondProblem.tsx'
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
         <ControlFlowFor/>
         <ControlFlowForSummation/>
         <ControlFlowForSummationExample/>
+        <SecondProblem/>
       </div>
     </>
   )

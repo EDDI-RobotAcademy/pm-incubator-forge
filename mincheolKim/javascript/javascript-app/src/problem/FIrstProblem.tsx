@@ -19,9 +19,11 @@ export const FirstProblem = () => {
 
             <pre>{
                 `
-z = ${z}                            // 5
-x = ${x}                            // 10
-result = ${result}                  // Hi
+z가 x 보다 크면 Hello,
+z가 x 보다 작거나 같으면 Hi를 출력해주세요.
+z = ${z}
+x = ${x}
+result = ${result}
 ternaryResult = ${ternaryResult}
                 `    
             }</pre>

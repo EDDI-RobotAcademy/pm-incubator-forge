@@ -46,7 +46,7 @@ export const ControlFlowForSummation = () => {
 
     return (
         <div>
-            <h3>javascript 제어문 (for)</h3>
+            <h3>javascript 제어문 (for/Summation)</h3>
 
             <pre>{
                 `

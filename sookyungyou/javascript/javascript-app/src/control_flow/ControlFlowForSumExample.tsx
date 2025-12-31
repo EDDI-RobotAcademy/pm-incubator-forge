@@ -9,6 +9,8 @@ export const ControlFlowForSumExample = () => {
    for (let i = 1, j = 0; j <= 2; i+=2, j++) {
         LoopResultArray.push(i)
         summation += LoopResultArray[j]
+        // 여기에서 i는 초기값인거고 j는 배열값임
+        // i가 (1, 1+2, 1+2+2) 이거고, j 는 0, 1, 2 총 3회까지 반복
         // i = 1, j = 0 일 떄
         // LoopResultArray = [1]
         // summation = 0 + 1(LoopResultArray[0]) = 1

@@ -4,6 +4,8 @@ import { VariableAndDataTypes } from './data_type/VariableAndDataTypes'
 import { LogicalOperationExample } from './logical_operation/LogicalOperationExample'
 import { CalculationExample } from './math_operation/CalculationExample'
 import { FirstProblem } from './problem/FIrstProblem'
+import { SecondProblem } from './problem/SecondProblem'
+
 
 function App() {
 
@@ -20,6 +22,7 @@ function App() {
         <LogicalOperationExample/>
         <ControlFlowIf/>
         <FirstProblem/>
+        <SecondProblem/>
       </div>
     </>
   )

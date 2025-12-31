@@ -8,6 +8,7 @@ import { ControlFlowSwitch } from './control_flow/ControlFlowIfSwitch'
 import { ControlFlowFor } from './control_flow/ControlFlowFor'
 import { ControlFlowForSummation } from './control_flow/ControlFlowForSummation'
 import { ControlFlowForSummationExample } from './control_flow/ControlFlowForSummationExample'
+import { SecondProblem } from './problem/SecondProblem'
 
 
 // 실행 방법: npm run dev
@@ -36,6 +37,7 @@ function App() {
         <ControlFlowFor/>
         <ControlFlowForSummation/>
         <ControlFlowForSummationExample/>
+        <SecondProblem/>
       </div>
     </>
   )
