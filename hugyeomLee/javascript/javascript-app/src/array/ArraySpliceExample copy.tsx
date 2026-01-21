@@ -7,6 +7,8 @@ export const ArraySpliceExample = () => {
         // 8의 원래 위치가 3번 인덱스
         // 3번 인덱스에서 1개를 지우라고 합니다.
         // 그 자리에 777이 배치됨
+        // 3번째꺼 뒤에 있는걸, 1개만 빼서, 777을 끼워넣을게 라는 뜻
+        // 광고 끼워넣기에 쓰임
         spliced_array.splice(3, 1, 777)
 
         let second_spliced_array: number[] = [...number_array]
