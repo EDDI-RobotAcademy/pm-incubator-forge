@@ -1,0 +1,158 @@
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 48px 24px 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.board-header h1 {
+  margin: 4px 0 8px;
+  font-size: 32px;
+  color: #1f2933;
+}
+
+.eyebrow {
+  display: inline-block;
+  padding: 4px 10px;
+  background: #eef2ff;
+  color: #4f46e5;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.subtitle {
+  margin: 0;
+  color: #52606d;
+}
+
+.board-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+  padding: 20px 20px 12px;
+}
+
+.board-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #334155;
+  font-weight: 600;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  box-shadow: 0 0 0 6px rgba(99, 102, 241, 0.12);
+}
+
+.primary-btn {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  border: none;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 700;
+  box-shadow: 0 8px 16px rgba(99, 102, 241, 0.25);
+}
+
+.table {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.table-head,
+.table-row {
+  display: grid;
+  grid-template-columns: 80px 1fr 140px 120px 110px;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+}
+
+.table-head {
+  background: #f8fafc;
+  color: #6b7280;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.table-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-row {
+  border-top: 1px solid #f1f5f9;
+  color: #111827;
+  background: #fff;
+}
+
+.table-row:hover {
+  background: #f7faff;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.id {
+  color: #475467;
+  font-weight: 700;
+}
+
+.title {
+  gap: 10px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.title-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.author,
+.date,
+.views {
+  color: #475467;
+  font-size: 14px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  background: #ecfeff;
+  color: #0891b2;
+  border: 1px solid #cffafe;
+}
+
+.helper-text {
+  margin: 14px 4px 4px;
+  color: #6b7280;
+  font-size: 13px;
+}
