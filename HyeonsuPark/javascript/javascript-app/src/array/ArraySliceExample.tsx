@@ -1,3 +1,4 @@
+// 하나의 페이지에 몇 개의 게시글을 보여줄 지 등에 사용
 export const ArraySliceExample = () => {
     let number_array: number[] = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
 
