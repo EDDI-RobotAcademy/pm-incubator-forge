@@ -1,0 +1,134 @@
+/* General Body Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #2c3e50;
+  background: radial-gradient(circle at 20% 20%, #e9f3ff, transparent 25%),
+    radial-gradient(circle at 80% 0%, #f7e9ff, transparent 25%),
+    #f4f7f6;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  max-width: 1100px;
+  width: 100%;
+  margin: 40px auto;
+  padding: 36px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(4px);
+  border: 1px solid #e6edf5;
+}
+
+/* Header Styles */
+.board-list-container h1 {
+  font-size: 2.5em;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.board-list-container h1::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 60px;
+  background-color: #3498db;
+  border-radius: 2px;
+}
+
+/* List Styles */
+.board-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.board-list-item {
+  background-color: #ffffff;
+  border: 1px solid #e0e6ed;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: left;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.board-list-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-color: #aed6f1;
+}
+
+.board-list-item h2 {
+  color: #34495e;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.4em;
+}
+
+.post-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  color: #6c7a89;
+  font-size: 0.9em;
+}
+
+.post-excerpt {
+  color: #566473;
+  font-size: 0.95em;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.ghost-button {
+  margin-top: auto;
+  align-self: flex-start;
+  padding: 10px 14px;
+  background: #f0f6ff;
+  color: #1f6feb;
+  border: 1px solid #d4e5ff;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.ghost-button:hover {
+  background: #e4edff;
+  border-color: #bcd5ff;
+}
+
+@media (max-width: 640px) {
+  .App {
+    margin: 16px;
+    padding: 20px;
+  }
+
+  .board-list-container h1 {
+    font-size: 2em;
+  }
+
+  .post-meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
