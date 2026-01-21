@@ -1,0 +1,156 @@
+:root {
+  color: #0f172a;
+  background-color: #f8fafc;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    sans-serif;
+}
+
+#root {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 48px 24px 64px;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.page__header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.page__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #e0f2fe;
+  color: #0369a1;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.page__title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #0f172a;
+}
+
+.page__subtitle {
+  margin: 0;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.board {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+  padding: 20px;
+}
+
+.board__meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 4px 16px;
+  color: #334155;
+  font-weight: 600;
+}
+
+.board__button {
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 160ms ease;
+}
+
+.board__button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.25);
+}
+
+.board__table {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.board__head,
+.board__row {
+  display: grid;
+  grid-template-columns: 80px 1fr 120px 120px 80px 80px;
+  align-items: center;
+}
+
+.board__head {
+  background: #f1f5f9;
+  color: #0f172a;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.board__body {
+  background: #ffffff;
+}
+
+.board__row:nth-child(odd) {
+  background: #f8fafc;
+}
+
+.board__row:hover {
+  background: #e0f2fe;
+}
+
+.cell {
+  padding: 14px 16px;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 14px;
+  color: #0f172a;
+}
+
+.board__head .cell {
+  border-bottom: 1px solid #cbd5e1;
+}
+
+.cell--title {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.cell--author,
+.cell--date,
+.cell--views,
+.cell--comments,
+.cell--id {
+  color: #475569;
+}
+
+.cell--views,
+.cell--comments,
+.cell--id {
+  text-align: right;
+}
+
+.cell--author,
+.cell--date {
+  text-align: center;
+}
+
+.board__row:last-child .cell {
+  border-bottom: none;
+}
