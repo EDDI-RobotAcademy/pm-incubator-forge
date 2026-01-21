@@ -1,0 +1,295 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 2em #3178c6aa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* 게시판 스타일 */
+.board-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+}
+
+.board-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.board-header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.write-button {
+  padding: 0.8em 1.5em;
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 500;
+  transition: background-color 0.25s;
+}
+
+.write-button:hover {
+  background-color: #535bf2;
+}
+
+.board-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.board-table thead {
+  background-color: rgba(100, 108, 255, 0.2);
+}
+
+.board-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid rgba(100, 108, 255, 0.3);
+}
+
+.board-table td {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.board-table tbody tr:hover {
+  background-color: rgba(100, 108, 255, 0.1);
+  cursor: pointer;
+}
+
+.col-id {
+  width: 80px;
+  text-align: center;
+}
+
+.col-title {
+  min-width: 300px;
+}
+
+.col-author {
+  width: 120px;
+}
+
+.col-date {
+  width: 180px;
+}
+
+.col-views,
+.col-likes {
+  width: 100px;
+  text-align: center;
+}
+
+.post-link {
+  color: #646cff;
+  text-decoration: none;
+  transition: color 0.25s;
+}
+
+.post-link:hover {
+  color: #535bf2;
+  text-decoration: underline;
+}
+
+/* 게시글 상세보기 스타일 */
+.post-detail {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgba(100, 108, 255, 0.3);
+}
+
+.post-header h2 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.close-btn {
+  padding: 0.6em 1.2em;
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.close-btn:hover {
+  background-color: #535bf2;
+}
+
+.post-info {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: rgba(100, 108, 255, 0.1);
+  border-radius: 6px;
+  font-size: 0.9em;
+}
+
+.post-content {
+  padding: 1.5rem;
+  line-height: 1.8;
+  font-size: 1.1em;
+  min-height: 200px;
+  background-color: rgba(255, 255, 255, 0.02);
+  border-radius: 6px;
+}
+
+@media (prefers-color-scheme: light) {
+  .board-table {
+    background-color: #f9f9f9;
+  }
+  
+  .board-table thead {
+    background-color: #e0e0ff;
+  }
+  
+  .board-table th {
+    border-bottom: 2px solid #c0c0ff;
+    color: #213547;
+  }
+  
+  .board-table td {
+    border-bottom: 1px solid #e0e0e0;
+    color: #213547;
+  }
+  
+  .board-table tbody tr:hover {
+    background-color: #f0f0ff;
+  }
+  
+  .post-detail {
+    background-color: #f9f9f9;
+  }
+  
+  .post-header {
+    border-bottom: 2px solid #c0c0ff;
+  }
+  
+  .post-info {
+    background-color: #e0e0ff;
+    color: #213547;
+  }
+  
+  .post-content {
+    background-color: #ffffff;
+    color: #213547;
+  }
+}
