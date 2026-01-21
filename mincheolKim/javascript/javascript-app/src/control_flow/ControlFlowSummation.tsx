@@ -1,16 +1,17 @@
-// 3, 6, 9, 12, 15를 더한 결과를 출력해봅시다.
-export const SecondProblem = () => {
+export const ControlFlowSummation = () => {
     let loopResultArray = []
     let summation = 0
-
-    for (let i = 3, j = 0; j <= 4; i += 3, j++) {
+    
+    for (let i = 1; i <= 3; i++) {
         loopResultArray.push(i)
-        summation += loopResultArray[j]
     }
+
+    for (let i = 1; i <= 3; i++)
+        summation += loopResultArray[i-1]
 
     return (
         <div>
-            <h3>Second Problem(for)</h3>
+            <h3>javascript 제어문 (summation)</h3>
 
             <pre>{
                 `

@@ -1,7 +1,6 @@
 import './App.css'
 import { ArraySliceExample } from './array/ArraySliceExample'
 import { ArraySpliceExample } from './array/ArraySpliceExample'
-import { ControlFlowIf } from './control_flow/ControlFlowIf'
 import { VariableAndDataTypes } from './data_type/VariableAndDataTypes'
 import { LogicalOperationExample } from './logical_operation/LogicalOperationExample'
 import { MapExample } from './map/MapExample'
@@ -9,6 +8,11 @@ import { MapFilterExample } from './map/MapFIlterExample'
 import { MapReduceExample } from './map/MapReduceExample'
 import { CalculationExample } from './math_operation/CalculationExample'
 import { FirstProblem } from './problem/FirstProblem'
+import { ControlFlowIf } from './control_flow/ControlFlowIf'
+import { ControlFlowSwitch } from './control_flow/ControlFlowSwitch'
+import { ControlFlowFor } from './control_flow/ControlFlowFor'
+import { ControlFlowSummation } from './control_flow/ControlFlowSummation'
+import { ControlFlowForSumExample } from './control_flow/ControlFlowForSumExample'
 import { SecondProblem } from './problem/SecondProblem'
 
 
@@ -27,6 +31,13 @@ function App() {
         <LogicalOperationExample/>
         <ControlFlowIf/>
         <FirstProblem/>
+
+        {/* 결석 부분 복습 */}
+        <ControlFlowSwitch/>
+        <ControlFlowFor/>
+        <ControlFlowSummation/>
+        <ControlFlowForSumExample/>
+
         <SecondProblem/>
         <MapExample/>
         <MapReduceExample/>
