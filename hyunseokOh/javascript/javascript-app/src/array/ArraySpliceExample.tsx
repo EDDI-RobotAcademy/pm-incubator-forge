@@ -1,6 +1,7 @@
 export const ArraySpliceExample = () => {
     let number_array: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];   // 원본 배열
     let spliced_array: number[] = [...number_array] // 배열 복사
+    // ... spread 연산자를 사용하여 원본 배열을 복사
 
     spliced_array.splice(3, 1, 777);    // 인덱스 3에서 1개 요소 제거 후 777 추가
 
